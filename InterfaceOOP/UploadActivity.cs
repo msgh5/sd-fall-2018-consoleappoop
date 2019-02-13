@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace InterfaceOOP
 {
-    public class UploadActivity : IActivity
+    public class UploadActivity : ActivityBase
     {
-        public void Execute()
+        public override void Execute()
         {
             Console.WriteLine("Uploading file");
         }

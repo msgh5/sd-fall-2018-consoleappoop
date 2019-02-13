@@ -8,6 +8,7 @@ namespace InterfaceOOP
 {
     public interface IActivity
     {
+        void Cleanup();
         void Execute();
     }
 }

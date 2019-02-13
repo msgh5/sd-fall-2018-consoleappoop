@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace InterfaceOOP
 {
-    public class SendEmailActivity : IActivity
+    public class SendEmailActivity : ActivityBase
     {
-        public void Execute()
+        public override void Execute()
         {
             Console.WriteLine("Sending email");
         }

@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace InterfaceOOP
 {
-    public class BackupActivity : IActivity
+    public class BackupActivity : ActivityBase
     {
-        public void Execute()
+        public override void Execute()
         {
             Console.WriteLine("Making backup");
-        }
-
-        public void UploadFile()
-        {
-            throw new NotImplementedException();
+            Cleanup();
         }
     }
 }
